@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+
+font-face {
+  font-family: "Gliker-Regular"; /* Replace with your font name */
+  src: url("Gliker-Regular.ttf") format("woff2"),
+    /* Adjust the path and format */
+      /*url('fonts/mycustomfont.woff') format('woff'),*/
+      url("Gliker-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+}
+
+.logo-container {
+  height: 3rem;
+  width: auto;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  /* font-weight: 600; */
+  /* font-size: 1.1rem; */
+  transition: color 0.3s ease;
+}
+
+.hero-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #17ce96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.hero-icon i {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.hero-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 5%;
+  gap: 3rem;
+}
+
+.hero-details {
+  flex: 1 1 45%;
+}
+
+.hero-details span {
+  font-family: "inter", sans-serif;
+  font-size: 1.2rem;
+}
+
+.hero-details h1 {
+  font-family: "lobster", sans-serif;
+  font-size: 4rem;
+  margin: 1rem 0;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #17ce96;
+}
+
+.hero-details p {
+  font-family: "inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.hero-image {
+  flex: 1 1 48%;
+  display: flex;
+  justify-content: end;
+}
+
+.hero-image img {
+  width: 70%;
+  height: auto;
+}
+
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #17ce96;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section {
+  padding: 5rem 5%;
+}
+
+.section-headers {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: "Vollkorn", serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.section-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.features-image {
+  height: 15rem;
+  width: 15rem;
+}
+
+.features-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.features-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+.feature-box {
+  border: 1px solid #17ce96;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.feature-box h3 {
+  font-family: "Inter", sans-serif;
+  margin: 1rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.feature-box p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
