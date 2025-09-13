@@ -128,6 +128,7 @@ body {
 
 .section {
   padding: 5rem 5%;
+  overflow: hidden;
 }
 
 .section-headers {
@@ -152,12 +153,12 @@ body {
   width: 15rem;
 }
 
-.features-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+/*.features-content {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  width: 100%;*/
+/*}*/
 
 .features-main {
   display: grid;
@@ -173,6 +174,7 @@ body {
   align-items: center;
   padding: 2rem;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .feature-box h3 {
@@ -188,4 +190,154 @@ body {
   color: #555;
   text-align: center;
   line-height: 1.5;
+}
+
+.i-btn {
+  height: 3rem;
+  width: 3rem;
+  background-color: #17ce96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.i-btn i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.features-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.cart-btn {
+  transform: translateX(-100px);
+}
+
+.like-btn {
+  transform: translateX(100px);
+}
+
+.feature-box:hover .cart-btn {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+.feature-box:hover .like-btn {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+.cart-btn:hover,
+.like-btn:hover {
+  background-color: transparent;
+  border: 1px solid #17ce96;
+  color: #17ce96;
+  transition-delay: 0.5s;
+}
+
+.cart-btn:hover i {
+  color: #17ce96;
+  transition-delay: 0.5s;
+}
+
+.like-btn:hover i {
+  color: #17ce96;
+  transition-delay: 0.5s;
+}
+
+.promo-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+.promo-box {
+  border: 1px solid #17ce96;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*padding: 2rem;*/
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.promo-box img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+.promo-box h3 {
+  font-family: "Inter", sans-serif;
+  margin: 1rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.promo-box p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+.promo-details {
+  padding: 2rem;
+  text-align: center;
+}
+
+.promo-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.promo-old-price {
+  text-decoration: line-through;
+  color: red;
+  font-family: "Inter", sans-serif;
+}
+
+.promo-new-price {
+  font-family: "Inter", sans-serif;
+  color: #17ce96;
+}
+
+.promo-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #17ce96;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  /* padding: 0 5%; */
+}
+
+.about-image {
+  flex: 1 1 48%;
+}
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.about-details {
+  flex: 1 1 45%;
 }
