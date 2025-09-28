@@ -405,26 +405,14 @@ body {
   color: #555;
   margin-bottom: 2.5rem;
 }
+.list-header{
+  margin-bottom: 1.5rem;
+}
 
+.list-item{
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem
+}
 /* STARTS HERE */
 
-.flex_grid {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.para {
-  width: 200px;
-  height: 200px;
-  border: 1px solid red;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.third-p {
-  height: 300px;
-  border-radius: 20px;
-  /* margin: 20px; */
-}
